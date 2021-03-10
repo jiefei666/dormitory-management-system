@@ -1,0 +1,44 @@
+@import '~view-design/dist/styles/iview.css';
+
+@white: #fff;
+
+.ivu-layout-header {
+  padding: 0;
+  background: @white;
+}
+
+.ivu-layout-footer {
+  padding: 0;
+  background: @white;
+}
+
+.ivu-modal-header-inner {
+  text-align: center;
+  color: @primary-color;
+}
+
+.ivu-modal-footer {
+  text-align: center;
+}
+
+// 修改表格滚动条样式
+.ivu-table-body {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 4px;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background: hsla(0, 0%, 53%, 0.4);
+  }
+
+  &:hover::-webkit-scrollbar-track {
+    background: hsla(0, 0%, 53%, 0.1);
+  }
+}

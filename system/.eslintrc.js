@@ -13,9 +13,6 @@ module.exports = {
     'no-unused-vars': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'vue/no-unused-components': process.env.NODE_ENV === 'production' ? 'warn' : 'warn'
   },
-  prettier: {
-    //   // singleQuite: true
-  },
   overrides: [
     {
       files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
